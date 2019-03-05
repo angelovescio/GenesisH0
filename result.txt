@@ -1,0 +1,13 @@
+vesh@hss:~/coinage/GenesisH0$ python genesis.py -z "September 20, 1977 - Fonzie jumps the shark" -n 1 -t 1231006505
+04ffff001d01042b53657074656d6265722032302c2031393737202d20466f6e7a6965206a756d70732074686520736861726b
+algorithm: SHA256
+merkle hash: 76ce5bf2eec937eb099ff8e86e87d0a27996bbfcbc9c2b8657fd075df96160bb
+pszTimestamp: September 20, 1977 - Fonzie jumps the shark
+pubkey: 04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f
+time: 1231006505
+bits: 0x1d00ffff
+Searching for genesis hash..
+317896.0 hash/s, estimate: 3.8 hgenesis hash found!
+nonce: 2625724463
+genesis hash: 0000000024b150ac790403b507a0f082dc7e7ad69541b0d0d9421eab5f6b159d
+
