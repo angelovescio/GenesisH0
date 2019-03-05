@@ -68,7 +68,22 @@ def create_output_script(pubkey):
   OP_CHECKSIG = 'ac'
   return (script_len + pubkey + OP_CHECKSIG).decode('hex')
 
-
+'''
+def create_transaction(input_script, output_script,options):
+  transaction = Struct("transaction",
+    "version" / Bytes(4),
+    "num_inputs" / Byte,
+    "prev_output" / Bytes(32),
+    'prev_out_idx' / UBInt32,
+    'input_script_len' / Byte,
+    'input_script' / Bytes(len(input_script)),
+    'sequence' / UBInt32,
+    'num_outputs' / Byte,
+    'out_value' / Bytes(8),
+    'output_script_len' / Byte,
+    'output_script' / Bytes(0x43),
+    'locktime' / UBInt32 )
+'''
 def create_transaction(input_script, output_script,options):
   transaction = Struct("transaction",
     Bytes("version", 4),
